@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Pokemon</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" href="pokemon_edit.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="pokemon_edit.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Pokemon</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="../trainer_list/trainer_list.html">trainers</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2>Edit pokemon</h2></header>
+                    <form class="pokemon__form" id="infoForm">
+                        <button class="ui-control ui-button" type="button" name="back"><a id="back" href="#">Back</a></button>
+                        <br>
+                        <label for="name">Name:</label>
+                        <input class="ui-control ui-input" id="name" name="name"/>
+                        <label for="level">Level:</label>
+                        <input class="ui-control ui-input" id="level" name="level" type="number"/>
+                        <input class="ui-control ui-button" type="submit" name="Update" value="Update"/>
+                    </form>
+                </article>
+            </section>
+
+            <footer class="footer">
+                <p>Copyright &copy; 2023, Jacenty Andruszkiewicz</p>
+            </footer>
+        </div>
+    </body>
+</html>
