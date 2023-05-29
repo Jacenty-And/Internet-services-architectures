@@ -1,0 +1,69 @@
+### 1
+
+GET http://localhost:8082/api/pokemons
+
+### 2
+
+GET http://localhost:8082/api/pokemons
+Accept: application/xml
+
+### 3
+
+GET http://localhost:8082/api/pokemons/1
+
+### 4
+
+GET http://localhost:8082/api/pokemons/3
+
+### 5
+
+POST http://localhost:8082/api/pokemons
+Content-Type: application/json
+
+{
+  "name": "Pikachu",
+  "level": 5,
+  "trainer": "Red"
+}
+
+### 6
+
+PUT http://localhost:8082/api/pokemons/3
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Venusaur",
+  "level": 30,
+  "trainer": "Leaf"
+}
+
+### 7
+
+DELETE http://localhost:8082/api/pokemons/5
+
+### 8
+
+GET http://localhost:8082/api/trainers
+
+### 9
+
+GET http://localhost:8082/api/trainers/Leaf
+
+### 10
+
+GET http://localhost:8082/api/trainers/Leaf/pokemons
+
+### 11
+
+POST http://localhost:8082/api/trainers
+Content-Type: application/json
+
+{
+  "name": "Ash",
+  "age": 13
+}
+
+### 12
+
+DELETE http://localhost:8082/api/trainers/Leaf
